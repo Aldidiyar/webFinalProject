@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebProject</title>
+    <link rel="icon" href="favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background-color: #E6F2FF;">
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Privacy policy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>By sending your information you agree to its further transfer to third parties.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Okay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">2023 News</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav nav-tabs">
+        <li class="nav-item active">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="politics.html">Politics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="technology.html">Technology</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sports.html">Sports</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mode
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" onclick="darkMode()" href="#">Dark</a></li>
+            <li><a class="dropdown-item" onclick="lightMode()" href="#">Light</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registration.html">Registration</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+  <div class="container mt-3">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="entertainment2.jpg" class="d-block w-100 carouselImage">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Why you see Black Friday sales on July?</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="politics1.jpg" class="d-block w-100 carouselImage">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Geert Wilders wins Dutch election</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="sports1.jpg" class="d-block w-100 carouselImage">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>UFC 262 results</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="entertainment1.jpg" class="card-img-top cardImage">
+        <div class="card-body">
+          <h5 class="card-title">Tech breakthroughs innovation</h5>
+          <p class="card-text">Cutting-edge advancements shaping the future.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="entertainment2.jpg" class="card-img-top cardImage">
+        <div class="card-body">
+          <h5 class="card-title">Why you see Black Friday sales on July?</h5>
+          <p class="card-text">Now Black Friday events even pop up in the summer?</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="science1.jpg" class="card-img-top cardImage">
+        <div class="card-body">
+          <h5 class="card-title">Green energy revolution</h5>
+          <p class="card-text">Eco-friendly solutions for the energy landscape.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="sports2.jpg" class="card-img-top cardImage">
+        <div class="card-body">
+          <h5 class="card-title">Macclesfield sign Everton</h5>
+          <p class="card-text">Macclesfield signed Everton striker Oumar Niasse.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="sports1.jpg" class="card-img-top cardImage">
+        <div class="card-body">
+          <h5 class="card-title">UFC 262 results</h5>
+          <p class="card-text">The name of the new lightweight champion.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="science2.jpg" class="card-img-top cardImage">
+        <div class="card-body">
+          <h5 class="card-title">OpenAI researchers warned board of AI</h5>
+          <p class="card-text">Powerful AI discovery that could threaten humanity.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-3 py-5">
+    <h2>Classify news game</h2>
+    <div class="category" id="entertainment2" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h3>Entertainment</h3>
+    </div>
+
+    <div class="category" id="sport" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h3>Sports</h3>
+    </div>
+
+    <div class="draggable" id="title1" draggable="true" ondragstart="drag(event)">Celestial Marvels Unveiled</div>
+    <div class="draggable" id="title2" draggable="true" ondragstart="drag(event)">Gastronomic Adventures Await</div>
+    <div class="draggable" id="title3" draggable="true" ondragstart="drag(event)">UFC 262 results</div>
+    <div class="draggable" id="title4" draggable="true" ondragstart="drag(event)">Bellator signed Yoel Romero</div>
+
+    <button onclick="checkAnswers()" class="btn btn-primary">Check</button>
+    <p id="result"></p>
+</div>
+<div><h3>Today's brief news</h3></div>
+  <div class="accordion mt-3" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Amazon to win unconditional EU nod for iRobot deal
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>BRUSSELS, Nov 23 (Reuters) - Amazon (AMZN.O) is set to win unconditional EU antitrust approval for its $1.4 billion acquisition of robot vacuum maker iRobot (IRBT.O), three people familiar with the matter said on Thursday. The deal announced in August would add iRobot's Roomba robot vacuum to U.S. online retail giant Amazon's portfolio of smart devices, includes the Alexa voice assistant, smart thermostats, security devices and wall-mounted smart displays.</strong>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Binance sees $956 million in outflows
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Investors pulled about $956 million from crypto exchange Binance over the past 24 hours, market data showed, after its chief, Changpeng Zhao, stepped down and faced prison time after pleading guilty on Tuesday to settle a years-long U.S. illicit finance probe. Data from crypto analytics platform Nansen, which does not include bitcoin flows, signaled some investors had been rattled by the news, pulling $956 million from the exchange. Still, the outflows were small relative to the more than $65 billion of assets that remain on Binance, Nansen said.</strong>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          India drawing up laws to regulate deepfakes
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>ndia is drawing up rules for governing deepfakes, a top minister said on Thursday, a day after Prime Minister Narendra Modi raised concerns over the technology. "We plan to complete drafting the regulations within the next few weeks," information technology minister Ashwini Vaishnaw told reporters after a meeting with academics, industry groups and social media companies.</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "mt-3" id="quiz-container">
+    <h1>Take the quiz about our website!</h1>
+    <div id="question-container"></div>
+  </div>
+
+  <div class="container container mt-3 py-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="form-group">
+                <label for="duration">Set timer duration for your events(seconds):</label>
+                <input type="number" class="form-control" id="duration" placeholder="Enter duration">
+            </div>
+            <button class="btn btn-primary btn-block" onclick="startTimer()">Start Countdown</button>
+            <div id="timer"></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6">
+        <form class="row g-2">
+          <div class="col-md-10">
+            <label for="taskForm" class="visually-hidden">Task</label>
+            <input class="form-control" id="taskInput" placeholder="Add articles so you don't forget to read them">
+          </div>
+          <div class="col-auto">
+            <button type="button" class="btn btn-primary mb-3" onclick="addTask()">Add task</button>
+          </div>
+        </form>
+
+        <ul class="list-group" id="taskList">
+          
+        </ul>
+
+      </div>
+      <div class="col-md-6">
+        <div id="errorMessages"></div>
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Type your message"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="formValidation()">
+            Submit
+          </button>
+          <button class="btn btn-primary" type="button" id="myBtn">Privacy policy</button>
+
+          
+        </form>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="modal" tabindex="-1" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="btn btn-primary" id="scroll">Scroll to top</button>
+  <div class="container">
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <p>&copy; 2023 News Website. All Rights Reserved.</p>
+                  <p>
+                      <a href="facebook.com" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="twitter.com" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="instagram.com" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                  </p>
+              </div>
+          </div>
+      </div>
+    </footer>
+  </div>
+    <script src ="index.js"></script>
+    <script src="https://kit.fontawesome.com/f0e13cd951.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+      function openModal() {
+        myModal.show();
+      }
+      document.getElementById('myBtn').addEventListener('click', openModal);
+    </script>
+  </body>
+</html>
